@@ -1,0 +1,10 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{font-family:'Noto Sans Armenian','Noto Sans',system-ui,sans-serif;background:linear-gradient(180deg,#f0f9ff 0%,#fff 45%,#ecfdf5 100%);color:#0f172a}
+.glass{background:rgba(255,255,255,.75);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.9);box-shadow:0 14px 34px -14px rgba(14,116,144,.35),0 2px 6px rgba(14,116,144,.06)}
+.btn{@apply rounded-xl px-4 py-2 font-semibold transition active:scale-95}
+.inp{@apply w-full rounded-xl border border-sky-200 bg-white px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-300}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+h1,h2,h3{font-family:'Noto Serif Armenian','Noto Serif',Georgia,serif;letter-spacing:-.01em}
+.shine{position:relative;overflow:hidden}
+.shine::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-100%);animation:sh 3.2s infinite}
+@keyframes sh{to{transform:translateX(100%)}}
